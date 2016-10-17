@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+}
+
+header {
+	height: 39px;
+	background-color: #D30102;
+	padding: 3px 0;
+}
+
+header .col-md-12:after, .col-md-12:before{
+	content: " ";
+	display: table;
+}
+
+header .col-md-12:after{
+	clear: both;
+}
+
+.clearfix:after,.clearfix:before {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.GlrHeader-logo>a{
+    background-image: url(sprite.png);
+    background-position: -227px -64px;
+    width: 191px;
+    height: 29px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.f-left{
+	float: left;
+}
+
+.box{
+	width: 299px;
+	height: 303px;
+	float: left;
+}
+
+.box.right {
+	background-color: #191919;
+	text-align: center;
+	color: white;
+	padding: 19px 25px;
+}
+
+.box.left{
+	background-color: #fff;
+	padding-left: 17px;
+	padding-right: 17px;
+	padding-top: 32px;
+}
+
+.box.left>p{
+	text-align: center;
+    font-size: 2.1rem;
+    font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.glr-login {
+/*	display: flex;
+	align-items: center;
+	justify-content : center;*/
+	background-color: #EBEBEB;
+}
+
+.input-group span{
+	width: 34px;
+	height: 31px;
+	display: inline-block;
+	text-align: center;
+	background-color: #EEEFF1;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.input-group span>i{
+	line-height: 2;
+}
+
+input[type="email"],input[type="password"]{
+	width: 225px;
+	height: 31px;
+	padding-left: 15px;
+}
+
+input[type="submit"]{
+	width: 265px;
+    border: none;
+    margin-top: 18px;
+    color: white;
+    padding: 5px 0;
+    background-color: #506372;
+}
+
+i.fa.fa-facebook{
+	margin-right: 12px;
+}
+
+a.facebook{
+	color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #2C4388;
+    padding: 8px 0;
+    text-align: center;
+	margin-top: 13px;
+}
+}

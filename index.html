@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+	<header>
+		<div class="container-fluid">	
+			<div class="row">
+				<div class="col-md-12">
+					<strong class="f-left GlrHeader-logo">
+						<a href="/">La Republica</a>
+					</strong>
+				</div>				
+			</div>
+		</div>
+	</header>
+
+	<div class="glr-login">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="wrap-login clearfix">
+						<div class="box left">
+							<p>Ingresa con tu correo</p>
+							<form action="">
+								<div class="input-group">
+									<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+									<input type="email" id="email" name="email" placeholder="Correo electrónico">
+								</div>
+								<div class="input-group">
+									<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+									<input type="password" id="password" name="password" placeholder="Contraseña">
+								</div>
+								<div class="input-group">
+									<input type="submit" id="btn-submit" value="Regístrate">
+								</div>
+							</form>
+							<a href="" class="facebook" id="login-facebook">
+		      					<span>
+		      						<i class="fa fa-facebook" aria-hidden="true"></i>
+		      						Ingresa por facebook
+		      					</span>		
+		      				</a>
+		      				<script>
+		      					window.fbAsyncInit = function() {
+    								FB.init({
+      									appId      : 'your-app-id',
+									    xfbml      : true,
+									    version    : 'v2.7'
+									});
+								};
+
+
+		      					// Load the SDK asynchronously
+								  (function(d, s, id) {
+								    var js, fjs = d.getElementsByTagName(s)[0];
+								    if (d.getElementById(id)) return;
+								    js = d.createElement(s); js.id = id;
+								    js.src = "//connect.facebook.net/en_US/sdk.js";
+								    fjs.parentNode.insertBefore(js, fjs);
+								  }(document, 'script', 'facebook-jssdk'));
+		      				</script>
+
+						</div>
+						<div class="box right">
+							<h2>Bienvenidos a LaRepublica.pe</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam venenatis mollis urna id.</p>
+							<p>Maecenas at erat erat. Cras aliquam ex nec nibh iaculis, a aliquam nibh placerat. Praesent vitae purus malesuada.</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>	
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

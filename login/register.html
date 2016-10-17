@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="glr-registerForm">
+        <div class="container-fluid">           
+            <div class="row">
+                <div class="wrap-profile col-sm-12">
+                    <div class="frm-login frm-login--form frm-login--edit">
+                        <div class="login__head">
+                            <h2>Editar perfil</h2>
+                        </div>
+                        <div class="login__body">
+                            <div class="form-group ">
+                                <input class="form-control" type="text" placeholder="Nombres" />
+                            </div>
+                            <div class="form-group ">
+                                <input class="form-control" type="text" placeholder="Apellidos" />
+                            </div>
+                            <div class="form-group ">
+                                <label for="">Fecha de nacimiento:</label>
+                                <div class="form-inline">
+                                    <select id="days" class="form-control" name="" title="Día">
+                                        <!-- <option value="">Dia</option> -->
+                                    </select>
+                                    <select id="months" class="form-control" name="" title="Mes">
+                                        <!-- <option value="">Mes</option> -->
+                                    </select>
+                                    <select id="years" class="form-control" name="" title="Año">
+                                        <!-- <option value="">Año</option> -->
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="">Género:</label>
+                                <div>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                    </label>
+                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Femenino
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="country">País:</label>
+                                        <select name="country" id="country" class="form-control" size="1">
+                                        <!-- <option value="">hola</option>   -->
+                                        
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="">Ciudad</label>
+                                        <select name="state" id="state" class="form-control" size="1">
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="line-grey" />
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Correo electrónico" value="" required autofocus/>
+                                <!-- @if ($errors->has('email'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                @endif -->
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" value="Contraseña" type="password" placeholder="Contraseña" required/>
+                                <!-- @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif -->
+
+                            </div>
+                            <p class="message-subs">Puedes suscribirte a nuestro <a href="">Newsletter aquí</a> y estar</br>informado sobre nuestro especial de <a href="">Elecciones 2016</a></p>
+                            <div class="form-group frm-table-form">
+                                <input type="submit" id="btn-submit" value="GUARDAR">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="main.js"></script> 
+    <script src="country.js"></script>
+    <script src="city.js"></script>         
+</body>
+</html>
+
+
+
